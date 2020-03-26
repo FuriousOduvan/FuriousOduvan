@@ -5,6 +5,7 @@ import HW3.IndividualWork;
 public class TestIW {
 
     public void traceBus(){
+        System.out.println("Позитивные тесты:");
         testBus(0, "Комсомольская");
         testBus(1, "Комсомольская");
         testBus(7, "Комсомольская");
@@ -13,6 +14,8 @@ public class TestIW {
         testBus(11, "Ленина");
         testBus(12, "Тимирязевская");
         testBus(14, "Тимирязевская");
+
+        System.out.println("Негативные тесты:");
         testBus(15, "Тимирязевская");
         testBus(-1, "Тимирязевская");
 

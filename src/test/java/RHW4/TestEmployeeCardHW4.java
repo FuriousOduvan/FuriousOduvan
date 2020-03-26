@@ -22,7 +22,7 @@ public class TestEmployeeCardHW4 {
 //        System.out.println(expect_res);
 //        System.out.println(actual_res);
             Assert.assertEquals(expect_res, actual_res, "Тест не пройден, текст ошибки:");
-        } catch (java.lang.AssertionError e) {
+        } catch (AssertionError e) {
             System.err.print("\n" + e);
         }
 

@@ -6,6 +6,7 @@ import static java.lang.Math.round; //Добавил для округления
 
 public class TestCalculation {
     public void testTC() throws Exception {
+        System.out.println("Позитивные тесты:");
         testDiscount(0, 1);
         testDiscount(1, 0.7);
         testDiscount(4, 0.7);
@@ -20,8 +21,12 @@ public class TestCalculation {
         testCountTicketPrice(100, 0.8,80);
         testCountTicketPrice(100, 0.7,70);
         testCountTicketPrice(100, 1,100);
-        testCountTicketPrice(0, 0.85,0);
-        testCountTicketPrice(-1, 0.85,0);
+
+        System.out.println("Негативные тесты:");
+        testDiscount(15, 0.7);
+        testDiscount(-1, 0.8);
+        testCountTicketPrice(0, 0.85,100);
+        testCountTicketPrice(-1, 0.85,100);
     }
 
     private void testDiscount(double salary, double discont) throws Exception{
